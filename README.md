@@ -83,11 +83,21 @@ python main.py
 
 ## 🎮 Controls
 
-| Key                 | Action       |
-| ------------------- | ------------ |
-| **Index Finger Up** | Draw         |
-| **C**               | Clear canvas |
-| **Q**               | Quit program |
+| Key   | Function                  |
+| ----- | ------------------------- |
+| **Q** | Quit the application      |
+| **C** | Clear the canvas          |
+| **S** | Save the current drawing  |
+| **E** | Enable eraser mode        |
+| **B** | Switch back to brush mode |
+| **+** | Increase brush size       |
+| **-** | Decrease brush size       |
+
+### ✋ Gesture Controls
+
+* **Index finger up** → Draw on the canvas
+* **Two fingers up** → Stop drawing
+* **Touch the top toolbar with your finger** → Change drawing color
 
 ---
 
