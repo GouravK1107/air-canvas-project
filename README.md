@@ -106,6 +106,16 @@ The program opens the webcam and allows users to **draw in the air using finger 
 
 ---
 
+## Implemented Improvements
+
+* Real-time hand tracking with MediaPipe
+* Gesture-based drawing using index finger
+* Smooth stroke rendering
+* Gesture color selection
+* Eraser mode
+* Save drawing as image
+* Multi-hand support
+
 ## 👨‍💻 Author
 
 **Gourav K**
