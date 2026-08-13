@@ -1,49 +1,57 @@
-# Air Canvas using OpenCV & MediaPipe
+# ✋ Air Canvas — Draw in the Air using OpenCV & MediaPipe
 
-A simple computer vision project that allows you to **draw in the air using your index finger** detected through a webcam.
+A computer vision project that lets you **draw in thin air** using just your index finger, tracked live through your webcam. MediaPipe detects hand landmarks in real time and converts index-finger movement into smooth drawing strokes on a virtual canvas overlaid on the camera feed.
 
-The system tracks hand landmarks using MediaPipe and converts the **index finger movement into drawing strokes** on a virtual canvas.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
 ---
 
 ## 🚀 Features
 
-* Real-time **hand tracking**
-* Draw using **index finger movement**
-* **Air drawing canvas**
-* Clear canvas with keyboard shortcut
-* Smooth drawing using frame tracking
+- ✋ Real-time hand tracking (21 landmark points via MediaPipe)
+- ✏️ Draw using index-finger movement
+- 🎨 Gesture-based color selection — touch the on-screen toolbar to switch colors
+- 🧽 Eraser mode, toggle back to brush anytime
+- 📏 Adjustable brush size (increase/decrease on the fly)
+- 💾 Save your drawing as an image
+- 👐 Multi-hand support
+- 🧼 Clear the entire canvas with a single keypress
+- 🎬 Smooth stroke rendering via frame-by-frame tracking
 
 ---
 
 ## 🧠 How It Works
 
-1. Webcam captures live video frames.
-2. MediaPipe detects the **hand landmarks (21 points)**.
-3. The program tracks the **index finger tip (landmark 8)**.
-4. When the index finger is raised, the system draws lines following the finger movement.
-5. The drawing is displayed on a virtual canvas over the webcam feed.
+1. The webcam captures live video frames
+2. MediaPipe detects hand landmarks (21 points per hand)
+3. The program tracks the **index finger tip** (landmark 8)
+4. When the index finger is raised, the system draws lines following its movement
+5. The drawing renders on a virtual canvas layered over the live webcam feed
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-* Python
-* OpenCV
-* MediaPipe
-* NumPy
+- Python
+- OpenCV
+- MediaPipe
+- NumPy
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Aircanvasproject/
+air-canvas-project/
 │
-├── main.py            # Main application logic
-├── hand_tracker.py    # Hand detection and landmark tracking
-├── canvas_utils.py    # Drawing utilities
-├── requirements.txt   # Project dependencies
+├── main.py             # Main application logic
+├── hand_tracker.py     # Hand detection and landmark tracking
+├── canvas_utils.py     # Drawing utilities
+├── requirements.txt    # Project dependencies
+├── .gitignore
 └── README.md
 ```
 
@@ -51,20 +59,13 @@ Aircanvasproject/
 
 ## ⚙️ Installation
 
-Clone the repository:
-
+**Clone the repository**
 ```
 git clone https://github.com/GouravK1107/air-canvas-project.git
-```
-
-Move into the project folder:
-
-```
 cd air-canvas-project
 ```
 
-Install dependencies:
-
+**Install dependencies**
 ```
 pip install -r requirements.txt
 ```
@@ -72,8 +73,6 @@ pip install -r requirements.txt
 ---
 
 ## ▶️ Running the Project
-
-Run the main program:
 
 ```
 python main.py
@@ -83,58 +82,61 @@ python main.py
 
 ## 🎮 Controls
 
-| Key   | Function                  |
-| ----- | ------------------------- |
-| **Q** | Quit the application      |
-| **C** | Clear the canvas          |
-| **S** | Save the current drawing  |
-| **E** | Enable eraser mode        |
+| Key | Function |
+|---|---|
+| **Q** | Quit the application |
+| **C** | Clear the canvas |
+| **S** | Save the current drawing |
+| **E** | Enable eraser mode |
 | **B** | Switch back to brush mode |
-| **+** | Increase brush size       |
-| **-** | Decrease brush size       |
+| **+** | Increase brush size |
+| **-** | Decrease brush size |
 
-### ✋ Gesture Controls
+### 🖐️ Gesture Controls
 
-* **Index finger up** → Draw on the canvas
-* **Two fingers up** → Stop drawing
-* **Touch the top toolbar with your finger** → Change drawing color
+- **Index finger up** → Draw on the canvas
+- **Two fingers up** → Stop drawing
+- **Touch the top toolbar with your finger** → Change drawing color
 
 ---
 
 ## 📸 Demo
 
-The program opens the webcam and allows users to **draw in the air using finger gestures**.
+Run the program, let it access your webcam, and start drawing in the air with your index finger — the canvas layers live on top of your camera feed in real time.
 
 ---
 
 ## 💡 Future Improvements
 
-* Gesture-based **color selection**
-* **Eraser mode**
-* Save drawing as **image**
-* Multi-hand gesture support
+- 🔺 Shape recognition (auto-detect circles, lines, rectangles from strokes)
+- 🖼️ Export drawings as a timelapse/GIF of the drawing process
+- 🌐 Web-based version using MediaPipe's JS runtime
+- 🤝 Collaborative multi-user air-drawing over a shared canvas
+- 🎯 Gesture-based undo/redo
 
 ---
 
-## Implemented Improvements
+## 🤝 Contributing
 
-* Real-time hand tracking with MediaPipe
-* Gesture-based drawing using index finger
-* Smooth stroke rendering
-* Gesture color selection
-* Eraser mode
-* Save drawing as image
-* Multi-hand support
+Contributions, issues, and feature requests are welcome.
+Fork → create a branch → commit → push → open a pull request.
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
 
 ## 👨‍💻 Author
 
-**Gourav K**
+**Gourav R**
+Backend Developer | Applied AI Developer — exploring Computer Vision & AI systems
 
-GitHub:
-https://github.com/GouravK1107
+GitHub: https://github.com/GouravK1107
+Portfolio: https://gouravk1107.github.io/my-portfolio/
 
 ---
 
-## ⭐ If you like this project
-
-Give it a **star ⭐ on GitHub**!
+Made with ❤️ and a lot of finger-waving.
