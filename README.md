@@ -9,6 +9,11 @@ A computer vision project that lets you **draw in thin air** using just your ind
 
 ---
 
+> 🎓 **Project Type: Learning**
+>
+> This project is built for learning purposes. I created it to understand and practice new concepts, tools, and technologies. The code may not follow production-level standards, and it's a work in progress as I keep exploring and improving.
+
+
 ## 🚀 Features
 
 - ✋ Real-time hand tracking (21 landmark points via MediaPipe)
